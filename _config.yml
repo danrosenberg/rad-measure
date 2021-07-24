@@ -1,0 +1,11 @@
+theme: jekyll-theme-cayman
+tab_title: Robustness to Augmented Data
+
+title: Are VQA Systems RAD? Measuring Robustness to Augmented Data with Focused Interventions
+description: Daniel Rosenberg, Itai Gat, Amir Feder, Roi Reichart
+
+google_analytics: G-MNCJCMGBD8
+
+show_downloads: True
+github:
+  data_url: https://rad-measure.s3.eu-central-1.amazonaws.com/yes-no_vqa.zip
