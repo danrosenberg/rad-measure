@@ -12,8 +12,19 @@ Load our dataset in the [VQA format](https://visualqa.org/download.html):
 ```python
 import rad_measure.vqa_utils as rad_vqa
 
-yes_no_vqa_questions = rad_vqa.get_questions(download=True)
-yes_no_vqa_annotations = rad_vqa.get_annotations(download=True)
+all_yn_questions, all_yn_annotations = rad_vqa.get_questions_and_annotations(download=True)
+```
+
+Load individual augmentation types:
+
+```python
+import rad_measure.vqa_utils as rad_vqa
+
+val_ync_questions, val_ync_annotations = rad_vqa.get_questions_and_annotations(
+    aug_type='colors', split='val')
+
+all_ync_ynhm_questions, all_ync_ynhm_annotations = rad_vqa.get_questions_and_annotations(
+    aug_type=['colors', 'how-many'], split='all')
 ```
 
 # Evaluate Robustness with RAD
