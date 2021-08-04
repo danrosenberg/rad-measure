@@ -12,7 +12,7 @@ Load our dataset in the [VQA format](https://visualqa.org/download.html):
 ```python
 import rad_measure.vqa_utils as rad_vqa
 
-all_yn_questions, all_yn_annotations = rad_vqa.get_questions_and_annotations(download=True)
+val_yn_questions, val_yn_annotations = rad_vqa.get_questions_and_annotations(download=True)
 ```
 
 Load individual augmentation types:
